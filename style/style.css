@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Remove margin, padding*/
 body {
   padding: 0;
@@ -12,10 +13,296 @@ body {
   margin: 0;
 }
 
-/*Remove decor and color*/
+/*Remove decoration and make color "inherit"*/
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/*Задаем макс. ширину и центрируем*/
+.container {
+  max-width: 1130px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*Начальные свойства grid*/
+.grid {
+  display: grid;
+  /*Делит на 50%*/
+  /*Делит на 33,33333%*/
+  /*Задает отступ между grid в 60px*/
+}
+.grid-col6 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-col4 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-gap {
+  grid-column-gap: 60px;
+}
+
+.d-flex_center_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Начало секции preview*/
+.preview {
+  padding: 7px 0;
+  max-height: 28px;
+  text-align: center;
+  background: #343434;
+  /*Текст внутрии секции*/
+}
+.preview__title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+}
+
+/*Класс hero - position: relative*/
+.hero {
+  background: url("../images/hero.png") no-repeat center/cover #fff;
+  height: calc(100vh - 303px);
+  padding: 30px 0 273px;
+  position: relative;
+  /*Класс __container удерживает*/
+  /*Свойства блока __shop-part - position: relative;*/
+  /*Свойства ссылок внутри блока __shop-part */
+  /*Свойтсва внешного отступа __link */
+  /*Свойтсва логотипа - position: absolute;*/
+  /*Доп. свойтсва внутри hero__logo*/
+  /*Свойтсва блока hero__info */
+  /*Свойтсва hero__nav*/
+  /*Свойтсва hero__nav-link - &:not(:last-child)*/
+  /*Свойтсва hero__title - &::after*/
+  /*Свойтсва hero__btn */
+  /*Свойтсва hero__cards - position: absolute;*/
+  /*Свойтсва hero__card*/
+  /*Свойтсва hero__theme*/
+  /*Свойтсва hero__desc*/
+  /*Свойтсва hero__money*/
+  /*Свойтсва hero__donate*/
+  /*Свойтсва hero__sub - &-title*/
+}
+.hero__container {
+  max-width: 1300px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.hero__shop-part {
+  position: relative;
+  max-height: 60px;
+  padding: 16px 0 20px;
+}
+.hero__link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #343434;
+}
+.hero_right {
+  margin-right: 62px;
+}
+.hero__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 172px;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 37px;
+  color: #747474;
+  text-align: center;
+}
+.hero__text-market {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.hero__info {
+  margin-top: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__nav {
+  display: block;
+  padding: 13px 27px;
+}
+.hero__nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2B2B2B;
+}
+.hero__nav-link:not(:last-child) {
+  margin-right: 49px;
+}
+.hero__title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 1px;
+  color: #343434;
+  width: 600px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 52px;
+}
+.hero__title::after {
+  content: "*";
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 1px;
+  color: #DE470D;
+  margin-left: 15px;
+}
+.hero__btn {
+  width: 240px;
+  height: 58px;
+  background: #FABAA0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #343434;
+  border: none;
+}
+.hero__cards {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: -106px;
+  background: #708D92;
+  padding: 20px;
+  width: 1110px;
+}
+.hero .hero__card {
+  height: 170px;
+  border: 1px solid #FFFFFF;
+  border-right: none;
+}
+.hero__theme {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.hero__desc {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FFFFFF;
+  width: 206px;
+  text-align: center;
+}
+.hero__money {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 67px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.hero__donate {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FBDCC5;
+}
+.hero__sub {
+  height: 85px;
+  border-bottom: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+.hero__sub-title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/*Класс about*/
+.about {
+  /*Свойства класса about */
+  text-align: center;
+  padding: 234px 0 60px;
+  background: #E5E5E5;
+  /*Свойства about__info-text*/
+  /*Свойства about__info-subText*/
+  /*Свойства about__cards*/
+  /*Свойства about__card*/
+  /*Свойства about__title - &_change - &::before*/
+  /*Свойства about__desc - &_change*/
+}
+.about__info-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #747474;
+  margin-bottom: 18px;
+}
+.about__info-subText {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 34px;
+  color: #343434;
+}
+.about__cards {
+  margin-top: 62px;
+  padding: 0 20px;
+}
+.about__card {
+  width: 295px;
+}
+.about__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #343434;
+  margin: 10px 0 14px;
+}
+.about__title::before {
+  content: "*";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #DE470D;
+}
+.about__title_change {
+  width: 306px;
+}
+.about__desc {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: #747474;
+  width: 241px;
+}
+.about__desc_change {
+  width: 249px;
 }
 
 /*# sourceMappingURL=style.css.map */

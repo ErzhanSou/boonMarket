@@ -10,5 +10,123 @@
 </head>
 <body>
 
+<section class="preview">
+    <p class="preview__title">Welcome to the Boon Market Preview.</p>
+</section>
+<!----> <!--Шаблон для комментариев-->
+<!--Начало секции hero-->
+<section class="hero">
+    <div class="hero__container">
+        <!--Начало внутренного div shop-part-->
+        <div class="hero__shop-part">
+            <!--hero__link задает начальные свойства, hero_right - дает отступ направо-->
+            <a href="#" class="hero__link hero_right">Shop</a>
+            <a href="#" class="hero__link">The Boon Life</a>
+            <!--hero__logo задает начальные свойства,
+            внутренний span изменяет изначальные свойтва hero__logo слово "Market"-->
+
+            <!--В hero__logo слово"B o o n " должен быть в таком порядке с пробелом после,
+            дабы не нарушить структуру слова-->
+            <h2 class="hero__logo">B o o n <span class="hero__text-market">Market</span></h2>
+        </div>
+    </div>
+    <!--Контейнер-->
+    <div class="container">
+        <!--Начало секции-->
+        <div class="hero__info">
+            <!--Начало Навигационный бар, класс hero__nav задает начальные свойства -->
+            <nav class="hero__nav">
+                <!--Ссылки в навигационный бар, класс hero__nav-link задает начальные свойства -->
+                <a href="#" class="hero__nav-link">Conscious Kitchen</a>
+                <a href="#" class="hero__nav-link">Conscious Pantry</a>
+                <a href="#" class="hero__nav-link">Eco Cleaning</a>
+                <a href="#" class="hero__nav-link">Personal Care</a>
+                <a href="#" class="hero__nav-link">Bags & Totes</a>
+                <a href="#" class="hero__nav-link">Gifts</a>
+            </nav>
+            <!--Конец нав. бар-->
+            <!--Главный текст секции hero, класс hero__title задает начальные свойства-->
+            <h1 class="hero__title">Shop Goods That Do Good</h1>
+            <!--Кнопка секции hero-->
+            <button class="hero__btn">Shop now</button>
+        </div>
+        <!--Конец секции-->
+        <!--Начало карточек, класс hero__cards задает position:absolut, ширину и внутр. отступ
+        Класс grid и grid-col4 задают настройки карточек -->
+        <div class="hero__cards grid grid-col4">
+            <!-- класс hero__card задает внутренние свойства карточек,
+            класс d-flex_center_column центрирует внутр. элементы карточек-->
+            <div class="hero__card d-flex_center_column">
+                <h2 class="hero__theme">The Boon Impact</h2>
+                <p class="hero__desc">Every purchase gives money directly to a cause of your choice.</p>
+            </div>
+            <div class="hero__card d-flex_center_column">
+                <h2 class="hero__money ">$100,664,335</h2>
+                <p class="hero__donate">donated to date</p>
+            </div>
+            <!--hero__card задает нач. свойства, класс grid-col6 разделяет на 2 блока-->
+            <div class="hero__card grid-col6">
+                <!--Класс hero__sub задает внут. свойства блока,
+                 класс d-flex_center_column центрирует внутр. элементы карточек-->
+                <div class="hero__sub d-flex_center_column">
+                    <p class="hero__donate">Want to make a difference?</p>
+                </div>
+                <div class="hero__sub d-flex_center_column">
+                    <a href="#" class="hero__sub-title">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Начало секции about-->
+<section class="about">
+    <div class="container">
+        <!--Класс about__info-text задает начальные свойства-->
+        <h4 class="about__info-text">About Boon</h4>
+        <!--Класс about__info-subText задает начальные свойства-->
+        <h2 class="about__info-subText">How We Work</h2>
+        <!--Начало карточек, класс about__cards задает внутр. и наружный отступ
+         Класс grid и grid-col4 задают настройки карточек -->
+        <div class="about__cards grid grid-col4">
+            <!--Начало самой карточки, класс about__card задает ширину-->
+            <div class="about__card ">
+                <!--Картина занеса в отдельный div-->
+                <div class="about__img">
+                    <img src="./images/ab1.png" alt="image one">
+                </div>
+                <!--Класс about_sub_d-flex ничего не задает начально, в связи с тем,
+                что у них разный вроень высоты
+                нужен для центрирования всей карточки в единную ширину, -->
+                <div class="about_sub_d-flex d-flex_center_column">
+                    <!--Класс about__title задает начальные свойства -->
+                    <h3 class="about__title">Good For You</h3>
+                    <!--Класс about__desc задает начальные свойства -->
+                    <p class="about__desc">We feature clever, beautiful products that are zero-waste, non-GMO, and toxin-free.</p>
+                </div>
+            </div>
+            <div class="about__card">
+                <div class="about__img">
+                    <img src="./images/ab2.png" alt="image two">
+                </div>
+                <div class="about_sub_d-flex  d-flex_center_column">
+                    <h3 class="about__title">Good For The Planet</h3>
+                    <p class="about__desc about__desc_change">Our zero-waste products and featured articles make it easy for anyone to make easy swaps with big environmental benefit.</p>
+                </div>
+             </div>
+            <div class="about__card ">
+                <div class="about__img">
+                    <img src="./images/ab3.png" alt="image three">
+                </div>
+                <div class="about_sub_d-flex d-flex_center_column">
+                    <h3 class="about__title about__title_change">Good For The Community</h3>
+                    <p class="about__desc about__desc_change">Each purchase made on Boon Market sends money to the cause of your choice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--Конец секции hero-->
+<!----> <!--Шаблон для комментариев-->
 </body>
 </html>

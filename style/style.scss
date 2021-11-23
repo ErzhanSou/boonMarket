@@ -17,6 +17,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  background: none;
+  border: none
+}
 
 /*Задаем макс. ширину и центрируем*/
 .container {
@@ -334,4 +338,122 @@ a {
       width: 249px;
     }
   }
+}
+
+/*Класс product*/
+.product {
+  width: 100%;
+  background: #F7F5F2;
+  padding: 73px 0 155px;
+  &__text{
+    text-align: center;
+  }
+
+  &__d-flex{
+    display: flex;
+    align-items: center;
+
+    &_flex1{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__infos-subText{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 34px;
+    color: #343434;
+  }
+  &__btn{
+    margin-top: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn-desc {
+    background: #FFFFFF;
+    border-radius: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #343434;
+    padding: 10px 21px 10px 15px;
+    margin-right: 10px;
+    transition: 0.6s;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__btn-desc:hover{
+    background: #FBDCC5;
+    border-radius: 25px;
+  }
+  &__btn-desc svg {
+    margin-right:12px;
+  }
+  &__card1{
+    margin-top: 40px;
+    width: 100%;
+  }
+  &__infos-subtitle{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #747474;
+    width: 72px;
+    margin: 12px 0 3px;
+  }
+  &__infos-title{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    color: #343434;
+    margin-bottom: 19px;
+    width: 350px;
+    box-shadow: 0 1px rgba(52, 52, 52, 0.15);
+  }
+  &__infos-desc{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #343434;
+    width: 140px;
+  }
+  &__price{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #343434;
+  }
+  &__infos-span{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #343434;
+    background: #FBDCC5;
+    border-radius: 3px;
+    padding: 7px 5px 4px;
+  }
+  &__infos-card1{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  &__d-flex3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }

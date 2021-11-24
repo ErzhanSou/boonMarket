@@ -1,0 +1,149 @@
+.header {
+  background-color: #dde0c9;
+}
+.header__shop-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__link-part {
+  position: relative;
+  display: flex;
+  margin: 0 0 0 50px;
+}
+.header__logo {
+  left: -74px;
+  margin: 0;
+  top: 5px;
+  bottom: 0;
+}
+.header__nav-link:not(:last-child) {
+  margin-right: 36px;
+}
+
+.far {
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.far:hover {
+  color: #ff0000;
+}
+
+.cards {
+  background: #F7F5F2;
+  padding: 50px;
+}
+.cards_flex {
+  display: flex;
+}
+.cards_flex_column {
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+.cards__nav-bar {
+  padding: 10px;
+}
+.cards__aside {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.cards__name {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #343434;
+}
+.cards__links {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #343434;
+  transition: 0.6s;
+}
+.cards__links:not(:last-child) {
+  margin-right: 68px;
+}
+.cards__links:hover {
+  color: #fff;
+  background: #747474;
+  border-radius: 5px;
+}
+.cards__card {
+  padding: 10px;
+}
+.cards__orange {
+  border: none;
+  background: #FBDCC5;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #343434;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+.cards__img {
+  padding: 0 10px;
+  position: relative;
+}
+.cards__img img {
+  width: 300px;
+}
+.cards__self {
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  border-radius: 10px;
+}
+.cards__sale {
+  position: absolute;
+  right: 0;
+  padding: 2px 5px 4px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #343434;
+  background: #FBDCC5;
+  border-radius: 3px;
+  width: 108px;
+}
+.cards__info {
+  padding: 15px 15px;
+}
+.cards__product-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #343434;
+  text-align: center;
+  height: 40px;
+}
+.cards__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards__money {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=reser.css.map */

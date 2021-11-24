@@ -46,6 +46,9 @@ button {
   &-gap {
     grid-column-gap: 60px;
   }
+  &-gap30{
+    grid-column-gap: 30px;
+  }
 
 }
 
@@ -61,14 +64,14 @@ button {
   padding: 7px 0;
   max-height: 28px;
   text-align: center;
-  background: #343434;
+  background: url("../images/media/santa.gif") top;
   /*Текст внутрии секции*/
   &__title {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.5px;
-    color: #FFFFFF;
+    color: #c6c6e8;
   }
 }
 

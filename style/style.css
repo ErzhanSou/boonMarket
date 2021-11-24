@@ -47,6 +47,9 @@ button {
 .grid-gap {
   grid-column-gap: 60px;
 }
+.grid-gap30 {
+  grid-column-gap: 30px;
+}
 
 .d-flex_center_column {
   display: flex;
@@ -60,7 +63,7 @@ button {
   padding: 7px 0;
   max-height: 28px;
   text-align: center;
-  background: #343434;
+  background: url("../images/media/santa.gif") top;
   /*Текст внутрии секции*/
 }
 .preview__title {
@@ -68,7 +71,7 @@ button {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.5px;
-  color: #FFFFFF;
+  color: #c6c6e8;
 }
 
 /*Класс hero - position: relative*/

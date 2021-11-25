@@ -11,6 +11,12 @@ body {
   padding: 0;
   margin: 0;
 }
+.col-6 {
+  width: 50%;
+}
+.row  {
+  width: 100%;
+}
 
 /*Remove decoration and make color "inherit"*/
 a {
@@ -459,4 +465,113 @@ button {
     align-items: center;
   }
 
+}
+.fresh {
+  padding: 73px 0 60px;
+  /*Свойства fresh__col-6*/
+  &__col-6  {
+    display: flex;
+  }
+  /*Свойства fresh__fresh-title*/
+  &__fresh-title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #343434;
+
+  }
+  /*Свойства fresh__btn_collection*/
+  &__btn-collection{
+    background: #FBDCC5;
+    border-radius: 3px;
+    border: none ;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #343434;
+    padding: 5px 8px 3px;
+    margin-bottom: 11px;
+    transition: 0.3s;
+    &:hover {
+      background: #fab202;
+      border-radius: 3px;
+      border: none ;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 5px 8px 3px;
+      margin-bottom: 11px;
+    }
+  }
+  /*Свойства fresh__col-6-right*/
+  &__col-6-right {
+    padding-top: 240px;
+  }
+  /*Свойства fresh__fresh-desc*/
+  &__fresh-desc{
+    margin-bottom: 31px;
+  }
+  /*Свойства fresh__info-desc*/
+  &__info-desc{
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #343434;
+  }
+  &__shop-2 {
+    display: flex;
+  }
+  /*Свойства fresh__col-6-right*/
+  &__shop {
+    padding: 2px;
+    width: 93px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #DE470D;
+    transition: 0.3s;
+    &:hover {
+      background: #0ef1f1;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fa0303;
+    }
+  }
+}
+.toxin {
+  justify-content: center;
+  background: #F7F5F2;
+  &__col-6-left {
+    padding-top: 226px;
+    margin-left: 270px;
+  }
+  &__col-6-right {
+    padding-top: 60px;
+    padding-right: 239px;
+  }
+  &__col-6 {
+    display: flex;
+    padding: 60px 0;
+    margin: 0 auto;
+  }
+}
+.celebraiting {
+  background: #F7F5F2;
+  &__col-6-right {
+    padding-left: 88px;
+  }
 }

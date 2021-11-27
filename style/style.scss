@@ -81,6 +81,12 @@ button {
   }
 }
 
+.not_active{
+  pointer-events: none;
+  cursor: default;
+}
+
+
 /*Класс hero - position: relative*/
 .hero {
   background: url("../images/hero.png") no-repeat center/cover #fff;
@@ -93,7 +99,10 @@ button {
     padding: 0 10px;
     margin: 0 auto;
   }
-
+  &__link_hover{
+    background: #a7cb90;
+    border-radius: 5px;
+  }
   /*Свойства блока __shop-part - position: relative;*/
   &__shop-part {
     position: relative;
@@ -157,9 +166,16 @@ button {
     font-size: 14px;
     line-height: 24px;
     color: #2B2B2B;
-
+    padding: 2px;
+    transition: 0.3s;
     &:not(:last-child) {
       margin-right: 49px;
+    }
+
+    &:hover{
+      background: #e88257;
+      border-radius: 5px;
+      color: #dcdfca;
     }
   }
 
@@ -199,7 +215,14 @@ button {
     text-transform: uppercase;
     color: #343434;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: #f37945;
+      color: white;
+    }
   }
+
 
   /*Свойтсва hero__cards - position: absolute;*/
   &__cards {

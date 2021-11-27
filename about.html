@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/reser.css">
     <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet"  href="style/slide/slide.css"/>
 </head>
 <body>
 
@@ -22,18 +23,18 @@
     <div class="hero__container">
         <!--Ссылки на другие страницы-->
         <div class="hero__shop-part header__shop-part">
-            <a href="./index.html"><h2 class="hero__logo header__logo ">B o o n <span
-                    class="hero__text-market">Market</span></h2></a>
-            <!--Класс header__link-part задает начальные свойства -->
-            <div class="header__link-part">
-                <a href="./shop.html" class="hero__link hero_right">Shop</a>
-                <a href="./about.html" class="hero__link">The Boon Life</a>
+            <div class="shab_main">
+                <a href="./index.html"><h2 class="hero__logo header__logo ">B o o n <span
+                        class="hero__text-market">Market</span></h2></a>
+                <!--Класс header__link-part задает начальные свойства -->
+                <div class="header__link-part">
+                    <a href="./shop.html" class="hero__link hero_right">Shop</a>
+                    <a href="./about.html" class="hero__link">The Boon Life</a>
+                </div>
             </div>
             <nav class="hero__nav header__shop-part">
                 <!--Ссылки в навигационный бар, класс hero__nav-link задает начальные свойства, header__nav-link отступ -->
-                <a href="#" class="hero__nav-link header__nav-link">Conscious Kitchen</a>
-                <a href="#" class="hero__nav-link header__nav-link">Conscious Pantry</a>
-                <a href="#" class="hero__nav-link header__nav-link">Eco Cleaning</a>
+                <a href="./navBar/ecoCleaning.html" class="hero__nav-link header__nav-link">Eco Cleaning</a>
                 <a href="#" class="hero__nav-link header__nav-link">Personal Care</a>
                 <a href="#" class="hero__nav-link header__nav-link">Bags & Totes</a>
                 <a href="#" class="hero__nav-link header__nav-link">Gifts</a>
@@ -44,13 +45,88 @@
 <!---->
 <!--Начало секции about-->
 <section class="about about__info">
-
     <div class="container">
         <!--Класс about__info-subText задает начальные свойства -->
         <h2 class="about__info-subText">Жизнь Boon</h2>
         <!--класс about__desc задает начальные свойтсва, about__desc_about задает доп. свойства-->
-        <p class="about__desc about__desc_about">Это - Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Aliquid esse iusto perferendis voluptates. Ad amet animi aperiam cum dolore eius eligendi eum expedita facere fugit hic in incidunt libero modi molestiae molestias nam natus odio omnis, optio possimus provident quisquam quo, rerum sequi sunt ut voluptate? Aliquam cum dolore dolorem dolorum eius, error et fuga fugit laborum, magni nemo, nesciunt nihil officiis rem repellendus soluta voluptate. A ad aliquam autem, consequuntur cupiditate, debitis deserunt doloremque eligendi eveniet hic, illum inventore minima non perspiciatis quam quas quibusdam ratione reiciendis sapiente suscipit. Labore magnam maxime totam veniam vero? Accusantium quam repellat ullam!</p>
+        <div class="about_us d-flex_center_column">
+            <p class="about__desc about__desc_about about__desc_change1"> О нас</p>
+            <p class="about__desc about__desc_about">
+                Boon market – осознанное потребление, экологическое отношение без вреда
+                нашей планете. мы не просто говорим "био" и "эко",
+                а тщательно подбираем продукты, изучаем составы,
+                осуществляем доставку без пластиковой упаковки и, конечно, пробуем всё сами!
+            </p>
+            <p class="about__desc about__desc_about">
+                Ноль отходов, снижение нагрузки на окружающую среду, осознанное потребление,
+                отказ от одногоразового пластика — то, к чему мы стремимся и на
+                что вдохновляем других
+            </p>
+            <p class="about__desc about__desc_about">
+                Товары, собранные в нашем интернет-магазине,
+                созданы для ведения экологичного образа жизни.
+            </p>
+            <p class="about__desc about__desc_about">Давайте потреблять осознанно и с заботой о нашей планете </p>
+        </div>
+
+    <div class="about__slider">
+        <div class="container">
+            <div id="content-slider">
+                <div id="slider">
+                    <div id="mask">
+                        <ul>
+                            <li id="first" class="firstanimation">
+                                <a href="https://www.gastronom.ru/product/limon-1399">
+                                    <img src="images/slide/img_1.jpg" alt="Limons"/>
+                                </a>
+                                <div class="tooltip">
+                                    <h1>Лимоны хорошие</h1>
+                                </div>
+                                    <p class="cool__text">Лимон очень полезен для здоровья, особенно, если это лимон баксов.</p>
+                            </li>
+
+                            <li id="second" class="secondanimation">
+                                <a href="https://alpinabook.ru/blog/zozh/">
+                                    <img src="images/slide/img_2.jpg" alt="ZOJ"/>
+                                </a>
+                                <div class="tooltip">
+                                    <h1>ЗОЖ — это тренд</h1>
+                                </div>
+                            </li>
+
+                            <li id="third" class="thirdanimation">
+                                <a href="https://8signal.com/way-professional-website-diy-not-diy-question/">
+                                    <img src="images/slide/img_3.jpg" alt="DIY"/>
+                                </a>
+                                <div class="tooltip">
+                                    <h1>DIY - Do It Yourself</h1>
+                                </div>
+                            </li>
+
+                            <li id="fourth" class="fourthanimation">
+                                <a href="https://pikabu.ru/story/krasnaya_panda_samoe_ocharovatelnoe_zhivotnoe_zemli_4204857">
+                                    <img src="images/slide/img_4.jpg" alt="Howling"/>
+                                </a>
+                                <div class="tooltip">
+                                    <h1>Fire Panda</h1>
+                                </div>
+                            </li>
+
+                            <li id="fifth" class="fifthanimation">
+                                <a href="https://hotwalls.ru/zvezdy_v_galaktike-wallpapers.html">
+                                    <img src="images/slide/img_5.jpg" alt="Stars"/>
+                                </a>
+                                <div class="tooltip">
+                                    <h1>Stars</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 

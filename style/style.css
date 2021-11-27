@@ -82,6 +82,11 @@ button {
   color: #c6c6e8;
 }
 
+.not_active {
+  pointer-events: none;
+  cursor: default;
+}
+
 /*Класс hero - position: relative*/
 .hero {
   background: url("../images/hero.png") no-repeat center/cover #fff;
@@ -111,6 +116,10 @@ button {
   max-width: 1300px;
   padding: 0 10px;
   margin: 0 auto;
+}
+.hero__link_hover {
+  background: #a7cb90;
+  border-radius: 5px;
 }
 .hero__shop-part {
   position: relative;
@@ -160,9 +169,16 @@ button {
   font-size: 14px;
   line-height: 24px;
   color: #2B2B2B;
+  padding: 2px;
+  transition: 0.3s;
 }
 .hero__nav-link:not(:last-child) {
   margin-right: 49px;
+}
+.hero__nav-link:hover {
+  background: #e88257;
+  border-radius: 5px;
+  color: #dcdfca;
 }
 .hero__title {
   font-weight: bold;
@@ -196,6 +212,12 @@ button {
   text-transform: uppercase;
   color: #343434;
   border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero__btn:hover {
+  background: #f37945;
+  color: white;
 }
 .hero__cards {
   position: absolute;

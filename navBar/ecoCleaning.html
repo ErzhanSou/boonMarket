@@ -36,8 +36,8 @@
             <nav class="hero__nav header__shop-part">
                 <!--Ссылки в навигационный бар, класс hero__nav-link задает начальные свойства, header__nav-link отступ -->
                 <a href="#" class="hero__nav-link header__nav-link hero__link_hover not_active">Eco Cleaning</a>
-                <a href="#" class="hero__nav-link header__nav-link">Personal Care</a>
-                <a href="#" class="hero__nav-link header__nav-link">Bags & Totes</a>
+                <a href="../navBar/personalCare.html" class="hero__nav-link header__nav-link">Personal Care</a>
+                <a href="../navBar/personalCare.html" class="hero__nav-link header__nav-link">Bags & Totes</a>
                 <a href="#" class="hero__nav-link header__nav-link">Gifts</a>
             </nav>
         </div>
@@ -86,6 +86,40 @@
             </p>
         </div>
 
+        <div class="feedback">
+            <h2 class="feedback__title">Обратная связь</h2>
+            <form>
+                <div class="form">
+                    <div class="name_users">
+                        <label for="firstname"></label>
+                        <input id="firstname" type="text" name="firstName" placeholder="Имя"
+                               class="feedback__regis">
+
+                        <label for="lastname"></label>
+                        <input id="lastname" type="text" name="lastName" placeholder="Фамилия" class="feedback__regis">
+                    </div>
+                    <div class="phone">
+                        <label for="userPhone"></label>
+                        <input id="userPhone" type="text" name="userNumber" placeholder="Номер телефона"
+                               class="feedback__regis feedback__phone feedback__phone_form">
+                    </div>
+                    <div class="feedback__service">
+                        <label for="select"></label>
+                        <select id="select" name="services" class="feedback__select">
+                            <option value="" disabled selected class="feedback__select_dis">Выберите сервис</option>
+                            <option value="services1">Сервис 1</option>
+                            <option value="services2">Сервис 2</option>
+                            <option value="services3">Сервис 3</option>
+                        </select>
+                    </div>
+                    <div class="btn_submit">
+                        <label for="submit"></label>
+                        <button id="submit" type="submit" name="submit" class="feedback__btn">Submit Now</button>
+
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 </body>

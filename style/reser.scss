@@ -89,6 +89,12 @@
     width: 100px;
     height: 30px;
     text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    &:hover{
+      background: #f6ae6d;
+      color: #fff;
+    }
   }
   &__img {
     padding: 0 10px;

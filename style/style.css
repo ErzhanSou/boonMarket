@@ -87,6 +87,82 @@ button {
   cursor: default;
 }
 
+.feedback__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #343434;
+  margin-bottom: 20px;
+}
+.feedback__regis {
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 20px 0 20px 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+  width: 255px;
+  height: 60px;
+}
+.feedback__regis:not(:last-child) {
+  margin-right: 27px;
+}
+.feedback__phone {
+  margin: 24px 0;
+}
+.feedback__phone_form {
+  width: 540px;
+  height: 60px;
+}
+.feedback__service {
+  margin-bottom: 27px;
+}
+.feedback__select {
+  width: 540px;
+  height: 60px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 20px 0 21px 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+  appearance: none;
+  background: url("../images/ChevronDown(E70D).svg") no-repeat center right;
+  background-position-x: calc(100% - 26px);
+}
+.feedback__select_dis {
+  display: none;
+  background-position-x: calc(100% - 26px);
+  color: rgba(19, 39, 67, 0.5);
+}
+.feedback__select option {
+  color: #000000;
+}
+.feedback__btn {
+  background: #4f7900;
+  border: 1.5px solid #d9e5c3;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 160px;
+  height: 50px;
+}
+
+#firstname::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+
 /*Класс hero - position: relative*/
 .hero {
   background: url("../images/hero.png") no-repeat center/cover #fff;
@@ -132,6 +208,13 @@ button {
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #343434;
+  padding: 4px;
+  transition: 0.3s;
+}
+.hero__link:hover {
+  background: #FABAA0;
+  color: #2B2B2B;
+  border-radius: 5px;
 }
 .hero_right {
   margin-right: 62px;
@@ -523,7 +606,6 @@ button {
   padding: 2px;
   width: 93px;
   text-align: center;
-  border-radius: 2px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -540,6 +622,7 @@ button {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fa0303;
+  border-radius: 5px;
 }
 
 .toxin {

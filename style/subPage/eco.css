@@ -1,0 +1,22 @@
+.eco {
+  padding: 120px 0;
+}
+.eco__info {
+  position: relative;
+}
+.eco__img {
+  margin-bottom: 20px;
+}
+.eco__img img {
+  width: 700px;
+  height: 500px;
+}
+.eco__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=eco.css.map */

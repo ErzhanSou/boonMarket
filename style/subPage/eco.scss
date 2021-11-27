@@ -1,0 +1,21 @@
+.eco{
+  padding: 120px 0 ;
+  &__info{
+    position: relative;
+  }
+  &__img{
+    margin-bottom: 20px;
+  }
+  &__img img{
+    width: 700px;
+    height: 500px;
+  }
+  &__title{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+  }
+
+}

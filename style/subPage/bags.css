@@ -1,5 +1,9 @@
 @import url("../slide/reset.css") screen;
 @import url("../slide/animation.css") screen;
+body {
+  background-color: #fff;
+}
+
 .bags {
   z-index: 0;
   width: 100%;

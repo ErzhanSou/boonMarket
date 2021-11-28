@@ -2,12 +2,6 @@
 @import url("animation.css") screen;
 
 /* Common */
-html, body {
-    background:#eaeaea repeat;
-    min-width:960px;
-    margin:0;
-    padding:0;
-}
 
 .content h1 {
     font-size:48px;

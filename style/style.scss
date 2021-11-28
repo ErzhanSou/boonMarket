@@ -50,6 +50,12 @@ button {
   &-col4 {
     grid-template-columns: repeat(3, 1fr);
   }
+  &-col6-2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-col6-2-1fr{
+    grid-template-columns: repeat(1, 2fr);
+  }
 
   /*Задает отступ между grid в 60px*/
   &-gap {
@@ -71,13 +77,21 @@ button {
 
 .logo_team{
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
   height: 100px;
   width: 100px;
+  background: none;
 }
 .logo_team img{
+  background: none;
+  border-radius: 50%;
+  transition: 1s;
   width: 100px;
   height: 100px;
+  &:hover{
+    border-radius: 10%;
+  }
 }
 
 
@@ -749,7 +763,7 @@ button {
 }
 
 .shop-moon{
-  width: 100%;
+  width: calc(100% - 52px);
   background: #F7F5F2;
   padding: 83px 26px 90px;
   &_container{
@@ -863,4 +877,111 @@ button {
     color: #FFFFFF;
   }
 
+}
+
+.footer .container{
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.footer{
+  padding: 55px 0 0;
+  background: #F7F5F2;
+  border: 1px solid #747474;
+  &_container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &_d-flex{
+    display: flex;
+  }
+  &__left{
+    background: #F7F5F2;
+    padding: 55px 110px;
+    &-nav {
+      display: flex;
+      flex-direction: column;
+      &_mt{
+        margin-top: 30px;
+      }
+      &_ml{
+        margin-left: 80px;
+      }
+    }
+  }
+  &__link{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #747474;
+    &:not(:last-child){
+      margin-bottom: 14px;
+    }
+    &-title{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #343434;
+      margin-bottom: 10px;
+    }
+  }
+  &__title{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+  }
+  &__copy{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+
+  &_d-flex{
+    display: flex;
+  }
+  &__right{
+    padding: 33px 39px;
+    background: #708D92;
+    width: calc(720px - 78px);
+    &_sub1{
+      padding: 25px 34px 20px;
+      border: 1px solid #FFFFFF;
+      max-width: 129px;
+    }
+    &_sub2{
+      max-height: 97px;
+      width: 242px;
+      padding: 30px 63px 39px;
+      border-top: 1px solid #FFFFFF;
+      border-right: 1px solid #FFFFFF;
+      border-bottom: 1px solid #FFFFFF;
+      &-title{
+        font-weight: normal;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+
+      }
+    }
+    &_sub3{
+      border-right: 1px solid #FFFFFF;
+      border-bottom: 1px solid #FFFFFF;
+      border-left: 1px solid #FFFFFF;
+      padding: 18px 33px 21px;
+      width: 430px;
+    }
+
+  }
 }

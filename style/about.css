@@ -1,3 +1,7 @@
+body {
+  background: #E5E5E5;
+}
+
 .about__info {
   height: calc(100vh - 200px);
   padding: 100px 0;

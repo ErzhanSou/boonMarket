@@ -1,54 +1,65 @@
-.header{
+.header {
   background-color: #dde0c9;
-  &__shop-part{
+
+  &__shop-part {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__link-part{
+
+  &__link-part {
     position: relative;
     display: flex;
     margin: 0 0 0 135px;
   }
-  &__logo{
+
+  &__logo {
     left: -74px;
     margin: 0;
     top: 5px;
     bottom: 0;
   }
-  &__nav-link:not(:last-child){
+
+  &__nav-link:not(:last-child) {
     margin-right: 36px;
   }
 }
-.far{
+
+.far {
   font-size: 25px;
   transition: 0.5s;
 }
-.far:hover{
+
+.far:hover {
   color: #ff0000;
 }
 
-.cards{
+.cards {
   background: #F7F5F2;
   padding: 50px;
-  &_flex{
+
+  &_flex {
     display: flex;
-    &_column{
+
+    &_column {
       flex-direction: row;
       justify-content: center;
       align-items: start;
     }
   }
-  &__nav-bar{
+
+  &__nav-bar {
     padding: 10px;
   }
-  &__aside{
+
+  &__aside {
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 10px rgba(0 0 0 / 50%);
   }
-  &__name{
+
+  &__name {
     display: block;
     font-weight: bold;
     font-size: 25px;
@@ -58,26 +69,31 @@
     margin-bottom: 20px;
     color: #343434;
   }
-  &__links{
+
+  &__links {
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #343434;
     transition: 0.6s;
     padding: 2px;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 60px;
     }
-    &:hover{
+
+    &:hover {
       color: #ffffff;
       background: #f37945;
       border-radius: 5px;
     }
   }
-  &__card{
+
+  &__card {
     padding: 10px;
   }
-  &__orange{
+
+  &__orange {
     border: none;
     background: #FBDCC5;
     font-weight: normal;
@@ -91,24 +107,29 @@
     text-align: center;
     border-radius: 5px;
     transition: 0.3s;
-    &:hover{
+
+    &:hover {
       background: #f6ae6d;
       color: #fff;
     }
   }
+
   &__img {
     padding: 0 10px;
     position: relative;
   }
-  &__img img{
+
+  &__img img {
     width: 300px;
   }
-  &__self{
+
+  &__self {
     border: 1px solid #e9e9e9;
     background: #fff;
     border-radius: 10px;
   }
-  &__sale{
+
+  &__sale {
     position: absolute;
     right: 0;
     padding: 2px 5px 4px;
@@ -122,10 +143,12 @@
     border-radius: 3px;
     width: 108px;
   }
-  &__info{
+
+  &__info {
     padding: 15px 15px;
   }
-  &__product-name{
+
+  &__product-name {
     font-weight: normal;
     font-size: 18px;
     line-height: 19px;
@@ -134,13 +157,15 @@
     text-align: center;
     height: 40px;
   }
-  &__price{
+
+  &__price {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  &__money{
+
+  &__money {
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;

@@ -66,6 +66,18 @@ button {
   align-items: center;
 }
 
+.logo_team {
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  width: 100px;
+}
+
+.logo_team img {
+  width: 100px;
+  height: 100px;
+}
+
 /* Начало секции preview*/
 .preview {
   padding: 7px 0;
@@ -85,6 +97,82 @@ button {
 .not_active {
   pointer-events: none;
   cursor: default;
+}
+
+.feedback__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #343434;
+  margin-bottom: 20px;
+}
+.feedback__regis {
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 20px 0 20px 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+  width: 255px;
+  height: 60px;
+}
+.feedback__regis:not(:last-child) {
+  margin-right: 27px;
+}
+.feedback__phone {
+  margin: 24px 0;
+}
+.feedback__phone_form {
+  width: 540px;
+  height: 60px;
+}
+.feedback__service {
+  margin-bottom: 27px;
+}
+.feedback__select {
+  width: 540px;
+  height: 60px;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 20px 0 21px 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+  appearance: none;
+  background: url("../images/ChevronDown(E70D).svg") no-repeat center right;
+  background-position-x: calc(100% - 26px);
+}
+.feedback__select_dis {
+  display: none;
+  background-position-x: calc(100% - 26px);
+  color: rgba(19, 39, 67, 0.5);
+}
+.feedback__select option {
+  color: #000000;
+}
+.feedback__btn {
+  background: #4f7900;
+  border: 1.5px solid #d9e5c3;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 160px;
+  height: 50px;
+}
+
+#firstname::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
 }
 
 /*Класс hero - position: relative*/
@@ -132,6 +220,13 @@ button {
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #343434;
+  padding: 4px;
+  transition: 0.3s;
+}
+.hero__link:hover {
+  background: #FABAA0;
+  color: #2B2B2B;
+  border-radius: 5px;
 }
 .hero_right {
   margin-right: 62px;
@@ -351,6 +446,10 @@ button {
 }
 .product__text {
   text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  color: #343434;
 }
 .product__d-flex {
   display: flex;
@@ -523,7 +622,6 @@ button {
   padding: 2px;
   width: 93px;
   text-align: center;
-  border-radius: 2px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -540,6 +638,7 @@ button {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fa0303;
+  border-radius: 5px;
 }
 
 .toxin {
@@ -564,6 +663,122 @@ button {
 }
 .celebraiting__col-6-right {
   padding-left: 88px;
+}
+
+.shop-moon {
+  width: 100%;
+  background: #F7F5F2;
+  padding: 83px 26px 90px;
+}
+.shop-moon_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.shop-moon__text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  color: #343434;
+  margin-bottom: 107px;
+}
+.shop-moon__line {
+  margin: 26px 0;
+}
+.shop-moon__d-flex {
+  display: flex;
+}
+.shop-moon .d-flex {
+  display: flex;
+  flex-direction: column;
+}
+.shop-moon__card1 {
+  width: 262px;
+  height: 262px;
+}
+.shop-moon__card1:not(:last-child) {
+  margin-right: 20px;
+}
+.shop-moon__card2 {
+  margin-top: 19px;
+  width: 262px;
+  height: 262px;
+}
+.shop-moon__card2:not(:last-child) {
+  margin-right: 20px;
+}
+
+.boon-letter {
+  width: 100%;
+  background: #ffffff;
+  padding: 66px 0 85px;
+}
+.boon-letter__text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  color: #343434;
+  margin-bottom: 58px;
+}
+.boon-letter__infos-subtitle {
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #747474;
+}
+.boon-letter__form {
+  margin-top: 25px;
+}
+.boon-letter__form .row {
+  margin: 0 -15px;
+}
+.boon-letter__form .col6 {
+  padding: 0 15px;
+}
+.boon-letter__center {
+  padding: 0 223px;
+}
+.boon-letter__name {
+  width: 230px;
+  height: 58px;
+  padding-left: 19px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 45px;
+  padding-right: 19px;
+  color: #000000;
+}
+.boon-letter__email {
+  width: 296px;
+  height: 58px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 45px;
+  color: #000000;
+}
+.boon-letter__btn-desc {
+  width: 94px;
+  height: 58px;
+  padding-left: 7px;
+  background: #343434;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

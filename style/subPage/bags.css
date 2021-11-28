@@ -1,0 +1,232 @@
+@import url("../slide/reset.css") screen;
+@import url("../slide/animation.css") screen;
+.bags {
+  z-index: 0;
+  width: 100%;
+  height: 735px;
+  background: url("../../images/bags.jpg") no-repeat center/cover;
+}
+.bags::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  height: 735px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+}
+.bags__cont {
+  padding: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bags__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bags__title {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 90px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.bags__title_sub {
+  color: #60ff75;
+}
+.bags__desc {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  margin: 20px 0;
+  width: 350px;
+}
+.bags__phone {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 22px;
+  color: #89f667;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.bags__phone:hover {
+  color: #68c04d;
+}
+
+.feedback {
+  background: #fff;
+  padding: 50px 0;
+}
+.feedback__title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #343434;
+}
+.feedback__small_title {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  color: #343434;
+  margin: 15px 0;
+}
+.feedback__sub {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #1f4225;
+}
+.feedback__main-title {
+  margin-bottom: 50px;
+}
+.feedback__cards {
+  background: #dad6d3;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.22);
+}
+.feedback__cards_img {
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 250px;
+}
+.feedback__cards_img img {
+  transition: 0.6s;
+  width: 300px;
+  height: 250px;
+}
+.feedback__cards_img img:hover {
+  width: 310px;
+  height: 260px;
+}
+.feedback__cards-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  color: #343434;
+}
+.feedback__cards-sub {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+  color: #343434;
+}
+.feedback__cards-desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #101010;
+  margin-top: 15px;
+}
+.feedback_inner_padding {
+  padding: 22px 15px 15px;
+}
+
+#bags__container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#bags__content-slider {
+  height: 360px;
+  width: 500px;
+  margin: 10px auto 0;
+}
+
+#bags__slider {
+  background: #000;
+  border: 5px solid #eaeaea;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  height: 320px;
+  width: 500px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+
+#bags__mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+#bags__slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#bags__slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+#bags__slider li.firstanimation {
+  -moz-animation: cycle 25s linear infinite;
+  -webkit-animation: cycle 25s linear infinite;
+  position: relative;
+}
+
+#bags__slider li.secondanimation {
+  -moz-animation: cycletwo 25s linear infinite;
+  -webkit-animation: cycletwo 25s linear infinite;
+}
+
+#bags__slider li.thirdanimation {
+  -moz-animation: cyclethree 25s linear infinite;
+  -webkit-animation: cyclethree 25s linear infinite;
+}
+
+#bags__slider li.fourthanimation {
+  -moz-animation: cyclefour 25s linear infinite;
+  -webkit-animation: cyclefour 25s linear infinite;
+}
+
+#bags__slider li.fifthanimation {
+  -moz-animation: cyclefive 25s linear infinite;
+  -webkit-animation: cyclefive 25s linear infinite;
+}
+
+#bags__slider .tooltip {
+  background: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 60px;
+  position: relative;
+  bottom: 75px;
+  left: -320px;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#bags__slider .tooltip h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  padding: 0 0 0 20px;
+}
+
+#bags__slider li#first:hover .tooltip,
+#bags__slider li#second:hover .tooltip,
+#bags__slider li#third:hover .tooltip,
+#bags__slider li#fourth:hover .tooltip,
+#bags__slider li#fifth:hover .tooltip {
+  left: 0;
+}
+
+#bags__slider:hover li,
+#bags__slider:hover .progress-bar {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
+
+/*# sourceMappingURL=bags.css.map */

@@ -1,0 +1,110 @@
+.gift {
+  padding: 50px;
+}
+.gift__img {
+  text-align: center;
+}
+.gift__btn {
+  background: #000000;
+  border: none;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 160px;
+  height: 50px;
+  transition: 0.5s;
+}
+.gift__btn:hover {
+  background: #494949;
+}
+.gift__info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.gift__info-title {
+  margin: 20px 50px 0 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  height: 40px;
+}
+
+.catalogs {
+  padding: 100px 0;
+}
+.catalogs__cards {
+  background: #f0f0f0;
+  width: 320px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.4);
+}
+.catalogs__cards-price {
+  padding: 10px 10px;
+}
+.catalogs__cards-sale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #a95414;
+  border-radius: 3px;
+  width: 120px;
+}
+.catalogs__cards-img {
+  overflow: hidden;
+  width: 320px;
+  height: 300px;
+  position: relative;
+}
+.catalogs__cards-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #343434;
+  text-align: center;
+  height: 40px;
+}
+.catalogs__cards-money {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 15px 0;
+}
+.catalogs__cards-add {
+  border: none;
+  background: #e7985f;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.catalogs__cards-add:hover {
+  background: #b96422;
+}
+.catalogs__cards-img img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=gift.css.map */

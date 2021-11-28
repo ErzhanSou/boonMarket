@@ -11,10 +11,12 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .col-6 {
   width: 50%;
 }
-.row  {
+
+.row {
   width: 100%;
 }
 
@@ -23,6 +25,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 button {
   background: none;
   border: none
@@ -52,7 +55,8 @@ button {
   &-gap {
     grid-column-gap: 60px;
   }
-  &-gap30{
+
+  &-gap30 {
     grid-column-gap: 30px;
   }
 
@@ -64,6 +68,19 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+.logo_team{
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  width: 100px;
+}
+.logo_team img{
+  width: 100px;
+  height: 100px;
+}
+
+
 
 /* Начало секции preview*/
 .preview {
@@ -81,11 +98,99 @@ button {
   }
 }
 
-.not_active{
+.not_active {
   pointer-events: none;
   cursor: default;
 }
 
+.feedback {
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #343434;
+    margin-bottom: 20px;
+  }
+
+  &__regis {
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px 0 20px 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 1);
+    width: 255px;
+    height: 60px;
+
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+
+  &__phone {
+    margin: 24px 0;
+
+    &_form {
+      width: 540px;
+      height: 60px;
+    }
+  }
+
+  &__service {
+    margin-bottom: 27px;
+  }
+
+  &__select {
+    width: 540px;
+    height: 60px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px 0 21px 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    appearance: none;
+    background: url("../images/ChevronDown(E70D).svg") no-repeat center right;
+    background-position-x: calc(100% - 26px);
+
+    &_dis {
+      display: none;
+      background-position-x: calc(100% - 26px);
+      color: rgba(19, 39, 67, 0.5);
+    }
+  }
+
+  &__select option {
+    color: #000000;
+  }
+
+  &__btn {
+    background: #4f7900;
+    border: 1.5px solid #d9e5c3;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 160px;
+    height: 50px;
+  }
+
+}
+
+#firstname::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
 
 /*Класс hero - position: relative*/
 .hero {
@@ -99,10 +204,12 @@ button {
     padding: 0 10px;
     margin: 0 auto;
   }
-  &__link_hover{
+
+  &__link_hover {
     background: #a7cb90;
     border-radius: 5px;
   }
+
   /*Свойства блока __shop-part - position: relative;*/
   &__shop-part {
     position: relative;
@@ -117,6 +224,14 @@ button {
     line-height: 24px;
     letter-spacing: 0.5px;
     color: #343434;
+    padding: 4px;
+    transition: 0.3s;
+
+    &:hover {
+      background: #FABAA0;
+      color: #2B2B2B;
+      border-radius: 5px;
+    }
   }
 
   /*Свойтсва внешного отступа __link */
@@ -168,11 +283,12 @@ button {
     color: #2B2B2B;
     padding: 2px;
     transition: 0.3s;
+
     &:not(:last-child) {
       margin-right: 49px;
     }
 
-    &:hover{
+    &:hover {
       background: #e88257;
       border-radius: 5px;
       color: #dcdfca;
@@ -217,7 +333,8 @@ button {
     border: none;
     cursor: pointer;
     transition: 0.3s;
-    &:hover{
+
+    &:hover {
       background: #f37945;
       color: white;
     }
@@ -377,31 +494,39 @@ button {
   width: 100%;
   background: #F7F5F2;
   padding: 73px 0 155px;
-  &__text{
+
+  &__text {
     text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: #343434;
   }
 
-  &__d-flex{
+  &__d-flex {
     display: flex;
     align-items: center;
 
-    &_flex1{
+    &_flex1 {
       display: flex;
       flex-direction: row;
     }
   }
-  &__infos-subText{
+
+  &__infos-subText {
     font-weight: bold;
     font-size: 45px;
     line-height: 34px;
     color: #343434;
   }
-  &__btn{
+
+  &__btn {
     margin-top: 155px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   &__btn-desc {
     background: #FFFFFF;
     border-radius: 25px;
@@ -419,18 +544,21 @@ button {
     }
   }
 
-  &__btn-desc:hover{
+  &__btn-desc:hover {
     background: #FBDCC5;
     border-radius: 25px;
   }
+
   &__btn-desc svg {
-    margin-right:12px;
+    margin-right: 12px;
   }
-  &__card1{
+
+  &__card1 {
     margin-top: 40px;
     width: 100%;
   }
-  &__infos-subtitle{
+
+  &__infos-subtitle {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
@@ -438,7 +566,8 @@ button {
     width: 72px;
     margin: 12px 0 3px;
   }
-  &__infos-title{
+
+  &__infos-title {
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -448,7 +577,8 @@ button {
     width: 350px;
     box-shadow: 0 1px rgba(52, 52, 52, 0.15);
   }
-  &__infos-desc{
+
+  &__infos-desc {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -457,7 +587,8 @@ button {
     color: #343434;
     width: 140px;
   }
-  &__price{
+
+  &__price {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -465,7 +596,8 @@ button {
     text-transform: uppercase;
     color: #343434;
   }
-  &__infos-span{
+
+  &__infos-span {
     font-weight: normal;
     font-size: 10px;
     line-height: 11px;
@@ -476,12 +608,14 @@ button {
     border-radius: 3px;
     padding: 7px 5px 4px;
   }
-  &__infos-card1{
+
+  &__infos-card1 {
     display: flex;
     flex-direction: column;
     width: 350px;
   }
-  &__d-flex3{
+
+  &__d-flex3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -489,12 +623,14 @@ button {
   }
 
 }
+
 .fresh {
   padding: 73px 0 60px;
   /*Свойства fresh__col-6*/
-  &__col-6  {
+  &__col-6 {
     display: flex;
   }
+
   /*Свойства fresh__fresh-title*/
   &__fresh-title {
     font-weight: bold;
@@ -504,11 +640,12 @@ button {
     color: #343434;
 
   }
+
   /*Свойства fresh__btn_collection*/
-  &__btn-collection{
+  &__btn-collection {
     background: #FBDCC5;
     border-radius: 3px;
-    border: none ;
+    border: none;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -518,10 +655,11 @@ button {
     padding: 5px 8px 3px;
     margin-bottom: 11px;
     transition: 0.3s;
+
     &:hover {
       background: #fab202;
       border-radius: 3px;
-      border: none ;
+      border: none;
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
@@ -532,31 +670,35 @@ button {
       margin-bottom: 11px;
     }
   }
+
   /*Свойства fresh__col-6-right*/
   &__col-6-right {
     padding-top: 240px;
   }
+
   /*Свойства fresh__fresh-desc*/
-  &__fresh-desc{
+  &__fresh-desc {
     margin-bottom: 31px;
   }
+
   /*Свойства fresh__info-desc*/
-  &__info-desc{
+  &__info-desc {
     margin-bottom: 14px;
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
     color: #343434;
   }
+
   &__shop-2 {
     display: flex;
   }
+
   /*Свойства fresh__col-6-right*/
   &__shop {
     padding: 2px;
     width: 93px;
     text-align: center;
-    border-radius: 2px;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -564,6 +706,7 @@ button {
     text-transform: uppercase;
     color: #DE470D;
     transition: 0.3s;
+
     &:hover {
       background: #0ef1f1;
       font-weight: 400;
@@ -572,28 +715,152 @@ button {
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #fa0303;
+      border-radius: 5px;
     }
   }
 }
+
 .toxin {
   justify-content: center;
   background: #F7F5F2;
+
   &__col-6-left {
     padding-top: 226px;
   }
+
   &__col-6-right {
     padding-top: 60px;
     padding-right: 239px;
   }
+
   &__col-6 {
     display: flex;
     padding: 60px 0;
     margin: 0 auto;
   }
 }
+
 .celebraiting {
   background: #F7F5F2;
+
   &__col-6-right {
     padding-left: 88px;
   }
+}
+
+.shop-moon{
+  width: 100%;
+  background: #F7F5F2;
+  padding: 83px 26px 90px;
+  &_container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &__text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: #343434;
+    margin-bottom: 107px;
+  }
+  &__line{
+    margin:26px 0;
+  }
+  &__d-flex{
+    display: flex;
+  }
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  &__card1{
+    width: 262px;
+    height: 262px;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+  &__card2{
+    margin-top: 19px;
+    width: 262px;
+    height: 262px;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+}
+.boon-letter{
+  width: 100%;
+  background: #ffffff;
+  padding: 66px 0 85px;
+  &__text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: #343434;
+    margin-bottom: 58px;
+  }
+  &__infos-subtitle{
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #747474;
+  }
+  &__form{
+    margin-top: 25px;
+  }
+  &__form .row{
+    margin: 0 -15px;
+  }
+  &__form .col6{
+    padding: 0 15px;
+  }
+  &__center{
+    padding: 0 223px;
+  }
+  &__name{
+    width: 230px;
+    height: 58px;
+    padding-left: 19px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 45px;
+    padding-right: 19px;
+    color: #000000;
+  }
+  &__email{
+    width: 296px;
+    height:58px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 45px;
+    color: #000000;
+
+  }
+  &__btn-desc{
+    width: 94px;
+    height: 58px;
+    padding-left: 7px;
+    background: #343434;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
 }
